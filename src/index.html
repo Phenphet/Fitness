@@ -30,6 +30,7 @@
         }
         header ul li a{
             padding: 14px 16px;
+            font-size: 1.2rem;
             display: block;
             text-decoration: none;
             color:white;
@@ -40,78 +41,83 @@
         header ul li a:hover{
             background-color: palevioletred;
         }
-        section{
+        body::after{
+            top: 0;
+            left: 0;
+            content:"";
+            position: absolute;
             background-image: url(../img/bg3.jpeg);
             background-repeat: no-repeat;
             background-size: cover;
-            width: 100%;
-            height: 94.8vh;
-            position: fixed;
-        }
-
-        .content{
-            width: 80%;
             height: 100%;
-            margin: 0 auto;
-            position: relative;            
-        }
-        .box{
-            position: absolute;
-            top: 17rem;
-            left: 4rem;
-            width: 40%;
-            padding: 15px 15px;
-            color: white;
-        }
-        .box h1{
-            font-size: 4rem;
-        }
-        .box h1::after{
-            content: "Fitness";
-            color: red;
-        }
-        .box p{
-            font-size: 1.6rem;
-        }
-        .box button{
-            font-size: 1rem;
-            margin-top: 20px;
-            background-color: white;
-            border-radius: 15px;
-            border: none;
-            cursor: pointer;
-            width: 130px;
-            height: 50px;
-            display: block;
-            transition: .4s;
-            color:red;
-        }
-        .box  a{
-            text-decoration: none;
-        }
-        .box button:hover{
-            transform: scale(1.2, 1.2);
-        }
-        footer{
-            font-size: 1.2rem;
-            color: white;
-            position: relative;
-            top: 85vh;
-        }
-        footer .ftbox{
-            color: white;
-            position: absolute;
-            left: 6rem;
+            width: 100%;
+            position: fixed;
+            z-index: -1;
         }
 
-        .ftbox ul{
-            list-style: none;
-            display: flex;
+       section{
+           color:white;
+           position: relative;
+           width: 80%;
+           margin: 0 auto;
+       }
+       section .box{
+            width: 40%;
+            height: 100%;
+            position: absolute;
+            top: 13rem;
+            left: 5rem;
+       } 
+       .txt h1::after{
+           content:"Fitness";
+           color: red;
+       }
+
+       section .box .txt{
+            font-size: 2rem;
+       }
+       .btn {
+            margin-top: 16px;
+       }
+       .btn a button{
+            color:red;
+            width: 150px;
+            height: 50px;
+            font-size: 1.3rem;
+            border-radius: 20px;
+            border: none;
+            transition: .4s;
+       }
+       .btn a button:hover{
             cursor: pointer;
-        }
-        .ftbox ul li a{
+            transform: scale(1.1, 1.1);
+       }
+
+       footer{
+           margin-top: 10px;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            margin: 0 auto;
+            display: block;
+       }
+       .ftbox{
+            color: white;
+            position: absolute;
+            top: 86vh;
+            left: 14.5rem;
+       }
+
+       .ftbox ul{
+           list-style: none;
+           display: flex;
+           align-items: center;
+           font-size: 1.2rem; 
+       }
+       .ftbox ul li a{
             padding: 14px 16px;
-        }
+            
+       }
 
     </style>
 </head>
@@ -133,15 +139,13 @@
         </ul>
     </header>
     <section>
-            <div class="content">
-                <div class="box">
-                    <div class="txt">
-                            <h1>Welcom to </h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates maxime explicabo, quibusdam animi, qui expedita laboriosam modi illum corrupti amet dolorum accusamus in rem officia soluta unde reiciendis quam maiores.</p>
-                    </div>
-                    <div class="btn">
+            <div class="box">
+                <div class="txt">
+                        <h1>Welcom to </h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates maxime explicabo, quibusdam animi, qui expedita laboriosam modi illum corrupti amet dolorum accusamus in rem officia soluta unde reiciendis quam maiores.</p>
+                </div>
+                <div class="btn">
                         <a href="#"><button><b>Go to Website </b></button></a>
-                    </div>
                 </div>
             </div>
     </section>
